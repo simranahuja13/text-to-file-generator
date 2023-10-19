@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Young Serif', serif;
+}
+:root{
+    --clr: rgba(15, 15, 15, 0.541);
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf0f3;
+    /* background-color: var(--clr); */
+
+}
+
+#container {
+   
+    width: 480px;
+    border-radius: 20px;
+    box-shadow:  14px 14px 20px #cbced1,
+    -14px -14px 20px white;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    margin: 0.5rem auto;
+}
+
+#logo img {
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#container textarea {
+    resize: none;
+    height: 250px;
+    width: 85%;
+    margin: auto;
+    padding: 7px;
+    background: none;
+    outline: none;
+    border: none;
+    box-shadow: inset 6px 6px 6px #cbced1,
+        inset -6px -6px 6px white;
+    display: flex;
+    
+}
+
+#box {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.5rem 0;
+}
+
+#name label,
+#type label {
+    display: block;
+    text-align: center;
+}
+
+#name input,
+#type select {
+    margin-top: 0.2rem;
+    padding: 4px;
+    box-shadow: inset 3px 3px 3px #cbced1,
+        inset -3px -3px 3px white;
+    outline: none;
+    border: none;
+    background: none;
+    border-radius: 5px;
+} 
+textarea{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+textarea::placeholder{
+    color: black;
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Young Serif', serif;
+}
+#saveBtn {
+    height: 2rem;
+    width: 40%;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    background: none;
+    margin: 1rem auto;
+    box-shadow: 5px 5px 5px  #cbced1,
+        -5px -5px 5px  white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.2s all;
+    pointer-events: none;
+}
+#container textarea:valid~#saveBtn{
+    pointer-events: auto;
+   
+}
+#saveBtn:hover {
+    transform: scale(0.95);
+}

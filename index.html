@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1 style="text-align: center; padding: 20px;">Text to File Converter</h1>
+        <div id="logo">
+            <img src="cipherbhailogo.png">
+        </div>
+        <textarea required placeholder="write something here"></textarea>
+        <div id="box">
+            <div id="name">
+                <label for="filename">File name</label>
+                <input type="text" id="filename">
+            </div>
+            <div id="type">
+                <label for=" saveas">Save as</label>
+                <select id="saveas">
+                    <option value="" selected>Text</option>
+                    <option value="application/pdf">Pdf</option>
+                    <option value="image/png">Png</option>
+                    <option value="text/html">HTML</option>
+                    <option value="text/javascript">Javascript</option>
+                    <option value="image/jpeg">Jpeg</option>
+                </select>
+            </div>
+        </div>
+        <button id="saveBtn">SAVE</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
